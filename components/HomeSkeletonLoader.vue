@@ -1,5 +1,5 @@
 <template>
-    <div class="py-16 space-y-2">
+    <div class="py-16 space-y-2 px-4">
         <div
             class="bg-gray-100 rounded-full animate-pulse h-10 w-[400px] md:w-[500px]"
         />

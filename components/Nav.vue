@@ -55,6 +55,28 @@ let links = ref([
             :class="{ hidden: !show }"
         />
 
-        <SideMenu v-if="show" />
+        <div
+            v-show="show"
+            class="fixed w-full h-full inset-0 z-10 bg-zinc-800/40 backdrop-blur-sm p-2 block lg:hidden"
+        >
+            <div
+                class="bg-white rounded-xl py-8 opacity-100 flex flex-col space-y-4 px-8"
+            >
+                <NuxtLink class="text-sm mt-10 border-b pb-3" href="/"
+                    >Home</NuxtLink
+                >
+                <template v-for="link in links">
+                    <NuxtLink :href="link.title" class="text-sm border-b pb-3">
+                        {{ link.name }}
+                    </NuxtLink>
+                </template>
+
+                <NuxtLink
+                    class="text-center py-2 bg-slate-500 rounded-md w-full text-white"
+                    href="mailto:ahgumasing@gmail.com"
+                    >Hire Me</NuxtLink
+                >
+            </div>
+        </div>
     </nav>
 </template>
