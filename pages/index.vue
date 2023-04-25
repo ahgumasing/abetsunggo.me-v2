@@ -1,7 +1,18 @@
 <script setup>
-const story = await useAsyncStoryblok('home', { version: 'draft' });
+import Home from '@/components/Website/Index.vue';
+import LoadingDots from '@/components/LoadingDots.vue';
 </script>
 
 <template>
-    <StoryblokComponent v-if="story" :blok="story.content" />
+    <Suspense>
+        <template #default>
+            <Home />
+        </template>
+
+        <template #fallback>
+            <div>
+                <loading-dots />
+            </div>
+        </template>
+    </Suspense>
 </template>

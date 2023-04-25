@@ -1,9 +1,6 @@
 <template>
-    <div
-        v-editable="blok"
-        class="w-full p-12 bg-[#f7f6fd] rounded-[5px] text-center"
-    >
-        <h3 class="text-2xl text-[#1d243d] font-bold">
+    <div v-editable="blok">
+        <h3 class="text-left py-2 text-4xl font-semibold text-black">
             {{ blok.name }}
         </h3>
     </div>

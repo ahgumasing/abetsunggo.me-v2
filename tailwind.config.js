@@ -5,4 +5,6 @@ module.exports = {
         'components/**/*.{vue,js}',
         'pages/**/*.vue',
     ],
+
+    plugins: [require('@tailwindcss/typography')],
 };
