@@ -8,5 +8,5 @@ defineProps({
 </script>
 
 <template>
-    <p class="text-4xl font-semibold h-auto">{{ blok.text }}</p>
+    <p class="leading-loose">{{ blok.text }}</p>
 </template>

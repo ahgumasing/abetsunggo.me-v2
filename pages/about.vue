@@ -1,6 +1,6 @@
 <script setup>
 import About from '@/components/Website/About.vue';
-import LoadingDots from '@/components/LoadingDots.vue';
+import AboutSkeletonLoader from '@/components/AboutSkeletonLoader.vue';
 </script>
 
 <template>
@@ -10,9 +10,7 @@ import LoadingDots from '@/components/LoadingDots.vue';
         </template>
 
         <template #fallback>
-            <div>
-                <loading-dots />
-            </div>
+            <AboutSkeletonLoader />
         </template>
     </Suspense>
 </template>

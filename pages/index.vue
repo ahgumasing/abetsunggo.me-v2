@@ -1,6 +1,6 @@
 <script setup>
 import Home from '@/components/Website/Index.vue';
-import LoadingDots from '@/components/LoadingDots.vue';
+import HomeSkeletonLoader from '@/components/HomeSkeletonLoader.vue';
 </script>
 
 <template>
@@ -10,9 +10,7 @@ import LoadingDots from '@/components/LoadingDots.vue';
         </template>
 
         <template #fallback>
-            <div>
-                <loading-dots />
-            </div>
+            <HomeSkeletonLoader />
         </template>
     </Suspense>
 </template>

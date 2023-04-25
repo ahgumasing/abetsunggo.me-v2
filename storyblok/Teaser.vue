@@ -3,8 +3,8 @@ defineProps({ blok: Object });
 </script>
 
 <template>
-    <div v-editable="blok" class="py-24">
-        <h1 class="text-black font-bold text-5xl w-[500px]">
+    <div v-editable="blok" class="lg:py-24">
+        <h1 class="text-black font-bold text-3xl lg:w-[500px] md:text-5xl">
             {{ blok.headline }}
         </h1>
 
