@@ -51,7 +51,7 @@ let links = ref([
 
         <XMarkIcon
             @click="show = !show"
-            class="w-6 h-6 text-black z-50 mr-4"
+            class="w-6 h-6 text-black z-50 mr-10 fixed right-0"
             :class="{ hidden: !show }"
         />
 

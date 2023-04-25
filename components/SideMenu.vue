@@ -4,7 +4,7 @@ import { XMarkIcon } from '@heroicons/vue/24/solid';
 
 <template>
     <div
-        class="fixed w-full h-full inset-0 z-10 bg-zinc-800/40 backdrop-blur-sm p-2"
+        class="fixed w-full h-full inset-0 z-10 bg-zinc-800/40 backdrop-blur-sm p-2 block lg:hidden"
     >
         <div
             class="bg-white rounded-xl py-8 opacity-100 flex flex-col space-y-4 px-8"
