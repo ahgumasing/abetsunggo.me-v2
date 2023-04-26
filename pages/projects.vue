@@ -1,12 +1,12 @@
 <script setup>
-import About from '@/components/Website/About.vue';
+import Projects from '~/components/Website/Projects.vue';
 import AboutSkeletonLoader from '@/components/AboutSkeletonLoader.vue';
 </script>
 
 <template>
     <Suspense>
         <template #default>
-            <About />
+            <Projects />
         </template>
 
         <template #fallback>
