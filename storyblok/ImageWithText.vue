@@ -9,7 +9,7 @@ defineProps({
 
 <template>
     <a
-        class="flex items-center space-x-4 hover:text-gray-300"
+        class="flex items-center space-x-4 hover:text-gray-400"
         :href="blok.link.url"
     >
         <img :src="blok.image" />
