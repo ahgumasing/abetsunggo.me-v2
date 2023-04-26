@@ -11,14 +11,6 @@ const showing = () => {
             isShowing.value = true;
         }, 500);
 };
-
-function resetIsShowing() {
-    isShowing.value = true;
-
-    setTimeout(() => {
-        isShowing.value = true;
-    }, 500);
-}
 </script>
 
 <template>
