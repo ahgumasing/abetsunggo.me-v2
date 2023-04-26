@@ -1,8 +1,9 @@
 <template>
     <div
         v-editable="blok"
-        class="grid md:grid-cols-2 gap-12 my-12"
+        class="grid md:grid-cols-2"
         :class="{
+            'gap-12 my-12': blok.size_gap === 'small',
             'lg:grid-cols-2': blok.number_of_columns == 2,
             'lg:grid-cols-3': blok.number_of_columns == 3,
             'lg:grid-cols-4': blok.number_of_columns == 4,

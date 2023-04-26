@@ -1,4 +1,5 @@
 <script setup>
+import { ArrowLongRightIcon } from '@heroicons/vue/24/solid';
 defineProps({
     blok: {
         type: Object,
@@ -21,6 +22,10 @@ defineProps({
             'font-bold': blok.font_size === 'font-bold',
         }"
     >
-        {{ blok.text }}
+        <span v-if="blok.is_arrow" class="flex items-center">
+            <ArrowLongRightIcon class="w-4 h-4 ml-4 mr-2" />
+            {{ blok.text }}
+        </span>
+        <span v-else> {{ blok.text }}</span>
     </p>
 </template>

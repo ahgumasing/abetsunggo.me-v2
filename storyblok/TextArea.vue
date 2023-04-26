@@ -8,5 +8,10 @@ defineProps({
 </script>
 
 <template>
-    <p class="leading-loose">{{ blok.text }}</p>
+    <p
+        class="leading-loose"
+        :class="{ 'text-gray-500': blok.color === 'gray' }"
+    >
+        {{ blok.text }}
+    </p>
 </template>
